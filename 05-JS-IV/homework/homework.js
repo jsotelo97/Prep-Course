@@ -38,7 +38,12 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+
+  /* Se declara variable que se iguala al objetoy se enlaza por DOT NOTATION numeroMisterioso
+  y luego se lo multiplica por 5 */
   let resultado = objetoMisterioso.numeroMisterioso * 5
+
+  // se retorna la variable declarada anteriormente.
   return resultado;
 }
 
@@ -68,7 +73,12 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+
+  /* Validamos el enunciado a traves de una condicional que en este caso pondremos dos parametros
+  a los cuales los igualaremos a dos valores distintos. */
   if (usuario.email !== null && usuario.email !== undefined){
+
+    // Obtenderemos un resultado booleano.
     return true;
   }
   return false;
@@ -80,7 +90,12 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  /* Usamos un condicional simple para validar si dentro del objeto existe una valor que sea
+  propiedad. Para esto se uso un parametro de extencion llamado "hasOwnProperty()" */
   if(objeto.hasOwnProperty(propiedad)){
+
+    // retornamos el resultado en valores booleanos.
     return true;
   }
   return false;
